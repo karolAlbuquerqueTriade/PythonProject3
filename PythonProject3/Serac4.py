@@ -70,7 +70,7 @@ except Exception as e:
     print(f"Erro ao criar tabelas: {e}")
     conn.rollback()
 
-client = Client("opc.tcp://192.168.1.50:49320")
+client = Client("opc.tcp://127.0.0.1:49320")
 
 try:
     client.connect()

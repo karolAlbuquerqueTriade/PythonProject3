@@ -122,7 +122,7 @@ def testar_scraping_manual():
         print("=" * 50)
         
         # Conectar ao KepServer
-        client = Client("opc.tcp://192.168.1.50:49320")
+        client = Client("opc.tcp://127.0.0.1:49320")
         client.connect()
         print("✅ Conectado ao KepServer")
         

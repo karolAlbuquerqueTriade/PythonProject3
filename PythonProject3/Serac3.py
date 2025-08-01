@@ -12,7 +12,7 @@ conn = psycopg2.connect(
 )
 cursor = conn.cursor()
 
-client = Client("opc.tcp://192.168.1.50:49320")
+client = Client("opc.tcp://127.0.0.1:49320")
 
 try:
     client.connect()

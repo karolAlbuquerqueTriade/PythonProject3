@@ -10,7 +10,7 @@ def test_kepserver_connection():
     try:
         # Tentar conectar ao KepServer
         print("1️⃣ Tentando conectar ao KepServer...")
-        client = Client("opc.tcp://192.168.1.50:49320")
+        client = Client("opc.tcp://127.0.0.1:49320")
         client.connect()
         print("✅ Conectado ao KepServer!")
         
@@ -160,7 +160,7 @@ def test_alternative_addresses():
     addresses = [
         "opc.tcp://127.0.0.1:49320",
         "opc.tcp://localhost:49320",
-        "opc.tcp://192.168.1.50:49320",
+        "opc.tcp://127.0.0.1:49320",
         "opc.tcp://127.0.0.1:4840",
         "opc.tcp://localhost:4840"
     ]
